@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <!-- start header -->
+     <header class="bg-[#EEF7FF] border border-[#124375] px-7 py-3">
+        <nav class="flex items-center justify-between  ">
+            <div class="flex items-center gap-3 text-[#124375]">
+                <button id="Nav-menu">
+                    <iconify-icon icon="material-symbols:menu-rounded" class="text-2xl"></iconify-icon>
+                </button> 
+                <div class="logo">
+                    <img src="../IMGs/Hu Logo 2.png" alt="logo"/>
+                </div>
+                <h1 class="text-xl font-semibold">صندوق الزمالة</h1>
+            </div>
+            <div class="flex items-center gap-4 text-[#124375] text-4xl">
+                <a class="cursor-pointer">
+                    <iconify-icon icon="ion:notifcations"></iconify-icon>
+                </a>
+                <a class="cursor-pointer" >
+                    <iconify-icon icon="boxicons:user-filled" ></iconify-icon>
+                </a>
+            </div>
+        </nav>
+     </header>
+     <!-- end header -->
+
+     <div class="flex ">
+          <!-- start SideBar -->
+          <aside class="SideBar bg-[#EEF7FF] active flex flex-col justify-between min-h-screen border-l border-[#124375]">
+            <div class="sidebar-pages flex flex-col  gap-5">
+                <div class="page surface-shadow rounded-xl text-lg font-medium px-2 py-3 flex items-center gap-2  text-[#124375] bg-[#F4F7F9] ">
+                    <a>
+                        <iconify-icon icon="mdi:home" class="text-3xl"></iconify-icon>
+                    </a>
+                    <p>الصفحة الرئيسية</p>
+                </div>
+                 <div class="page surface-shadow rounded-xl text-lg font-medium px-2 py-3 flex items-center gap-2  text-[#124375] bg-[#F4F7F9] ">
+                    <a>
+                        <iconify-icon icon="mdi:account-group" class="text-3xl"></iconify-icon>
+                    </a>
+                    <p>الأعضاء</p>
+                </div>
+                <div class="page surface-shadow rounded-xl text-lg font-medium px-2 py-3 flex items-center gap-2  text-[#124375] bg-[#F4F7F9] ">
+                    <a>
+                        <iconify-icon icon="material-symbols:list-alt-check-rounded" class="text-3xl"></iconify-icon>
+                    </a>
+                    <p>الاشتراكات</p>
+                </div>
+                 <div class="page surface-shadow rounded-xl text-lg font-medium px-2 py-3 flex items-center gap-2  text-[#124375] bg-[#F4F7F9] ">
+                    <a>
+                        <iconify-icon icon="fluent:money-16-filled" class="text-3xl"></iconify-icon>
+                    </a>
+                    <p>القروض</p>
+                </div>
+                 <div class="page surface-shadow rounded-xl text-lg font-medium px-2 py-3 flex items-center gap-2  text-[#124375] bg-[#F4F7F9] ">
+                    <a>
+                        <iconify-icon icon="fluent-mdl2:financial-solid" class="text-3xl"></iconify-icon>
+                    </a>
+                    <p>المالية</p>
+                </div>
+                 <div class="page surface-shadow rounded-xl text-lg font-medium px-2 py-3 flex items-center gap-2  text-[#124375] bg-[#F4F7F9] ">
+                    <a>
+                        <iconify-icon icon="mdi:account-file" class="text-3xl"></iconify-icon>
+                    </a>
+                    <p>المطالبات</p>
+                </div>
+            </div>
+            <div>
+                <div class="page surface-shadow rounded-xl text-lg font-medium px-2 py-3 flex items-center gap-2  text-[#124375] bg-[#F4F7F9] ">
+                    <iconify-icon icon="ic:round-logout" class="text-3xl text-[#D92D20]"></iconify-icon>
+                    <p>تسجيل الخروج</p>
+                </div>
+            </div>
+          </aside>
+          <!-- end SideBar -->
+
+          <!-- start main -->
+          <main class="flex-1 py-5 px-3">
+            <!-- start header main -->
+            <div class="flex flex-col gap-2">
+                <h2 class="text-[#021219] text-xl font-semibold"> مرحباً ، <span></span></h2>
+                <p class="text-[#6D6D6D] text-base font-normal">
+                    نظام إدارة الصندوق – لوحة الموظف
+                </p>
+            </div>
+            <!-- end header main -->
+
+            <!-- start search -->
+            <div class="flex items-center gap-5 mt-6 ">
+                <input  type="search" placeholder="الاسم  أو  رقم العضوية  أو  الرقم القومي أو رقم القرض" class="w-full  rounded-xl py-2 pr-2 surface-shadow outline-none focus:ring-1 focus:ring-[#124375] focus:shadow-[#124375] focus:shadow">
+                <button class="bg-[#124375] text-white rounded-xl px-7 surface-shadow">
+                    <iconify-icon icon="bitcoin-icons:search-outline" class="text-4xl"></iconify-icon>
+                </button>
+            </div>
+            <!-- end search -->
+
+            <!-- start cards -->
+            <div class="py-4 grid grid-cols-4 gap-4">
+                <div class="surface-shadow flex items-center justify-center gap-4 bg-[#F4F7F9] rounded-xl px-7 py-4 border-s-8 border-[#124375]">
+                    <div>
+                        <iconify-icon icon="mdi:account-group" class="surface-shadow text-4xl text-[#124375] bg-[#EEF7FF] rounded-lg px-2 py-1"></iconify-icon>
+                    </div>
+                    <div class="flex flex-col items-center text-[#124375] gap-2">
+                        <p class="text-4xl font-extrabold">9</p>
+                        <p class="text-sm font-medium">عدد الأعضاء النشطين</p>
+                    </div>
+                </div>
+                <div class="surface-shadow flex items-center justify-center gap-4 bg-[#F4F7F9] rounded-xl px-7 py-4 border-s-8 border-[#D4AF37]">
+                    <div>
+                        <iconify-icon icon="mdi:account-file" class="surface-shadow text-4xl text-[#D4AF37] bg-[#FFFCEF] rounded-lg px-2 py-1"></iconify-icon>
+                    </div>
+                    <div class="flex flex-col items-center text-[#124375] gap-2">
+                        <p class="text-4xl font-extrabold">0</p>
+                        <p class="text-sm font-medium">اشتراكات اليوم</p>
+                    </div>
+                </div>
+                <div class="surface-shadow flex  items-center justify-center gap-4 bg-[#124375] rounded-xl px-4 py-4 border-s-8 border-[#EEF7FF]">
+                    <div>
+                        <iconify-icon icon="material-symbols:assignment-late" class="surface-shadow text-4xl text-[#124375] bg-[#EEF7FF] rounded-lg px-2 py-1"></iconify-icon>
+                    </div>
+                    <div class="flex flex-col items-center text-[#F4F7F9] gap-2">
+                        <p class="text-4xl font-extrabold">3</p>
+                        <p class="text-sm font-medium">أقساط مستحقة اليوم</p>
+                    </div>
+                </div>
+                <div class="surface-shadow flex items-center justify-center gap-4 bg-[#F4F7F9] rounded-xl px-4 py-4 border-s-8 border-[#D92D20]">
+                    <div>
+                        <iconify-icon icon="mdi:account-convert"  class="surface-shadow text-4xl text-[#D92D20] bg-[#FFEAE880] rounded-lg px-2 py-1"></iconify-icon>
+                    </div>
+                    <div class="flex flex-col items-center text-[#124375] gap-2">
+                        <p class="text-4xl font-extrabold">5</p>
+                        <p class="text-sm font-medium">طلبات تحت المراجعة</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end cards -->
+
+            <!-- start tasks -->
+            <div class="py-5 grid grid-cols-3 gap-7">
+                <div class="col-span-2 space-y-5">
+                    <div class="flex items-center gap-2">
+                        <iconify-icon icon="material-symbols:edit-notifications-rounded" class="text-2xl" ></iconify-icon>
+                        <h2 class="text-base font-medium">المهام المطلوبة اليوم <span class="text-[#124375]">(3)</span></h2>
+                    </div>
+                    <div class="py-2 surface-shadow rounded-2xl py-4 px-5 divide-y-2 divide-[#6D6D6D]">
+                        <div class="flex justify-between py-5">
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="dashicons:arrow-left" class="text-4xl text-[#175CD3]"></iconify-icon>
+                                <div>
+                                    <h3 class="text-[#021219] text-sm font-medium">اشتراك مستحق اليوم</h3>
+                                    <p class="text-[#6D6D6D] text-sm font-normal">غير مسجل بعد</p>
+                                </div>
+                            </div>
+                            <button class="surface-shadow text-[#F4F7F9] text-sm bg-[#124375] rounded-[10px] font-medium px-4 py-3">عرض التفاصيل</button>
+                        </div>
+                        <div class="flex justify-between py-5">
+                            <div class="flex items-center gap-2">
+                                <iconify-icon icon="dashicons:arrow-left" class="text-4xl text-[#D92D20]"></iconify-icon>
+                                <div>
+                                    <h3 class="text-[#021219] text-sm font-medium">قسط متأخر</h3>
+                                    <p class="text-[#6D6D6D] text-sm font-normal">متأخر منذ 4 ايام</p>
+                                </div>
+                            </div>
+                            <button class="surface-shadow text-[#F4F7F9] text-sm bg-[#124375] rounded-[10px] font-medium px-4 py-3">عرض التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="surface-shadow flex flex-col items-center bg-[#F4F7F9] rounded-xl px-4 py-7 border-s-8 border-[#124375]">
+                            <iconify-icon icon="mdi:account-multiple-plus" class="text-5xl text-[#124375]"></iconify-icon>
+                            <h3 class="text-base font-medium text-[#124375]">تسجيل عضو جديد</h3>
+                        </div>
+                        <div class="surface-shadow flex flex-col items-center bg-[#F4F7F9] rounded-xl px-4 py-7 border-s-8 border-[#124375]" >
+                            <iconify-icon icon="material-symbols:list-alt-check-rounded" class="text-5xl text-[#124375]"></iconify-icon>
+                            <h3 class="text-base font-medium text-[#124375]">تسجيل سداد إشتراك</h3>
+                        </div>
+                        <div class="surface-shadow flex flex-col items-center bg-[#F4F7F9] rounded-xl px-4 py-7 border-s-8 border-[#124375]">
+                            <iconify-icon icon="ion:cash" class="text-5xl text-[#124375]"></iconify-icon>
+                            <h3 class="text-base font-medium text-[#124375]">تسجيل سداد قسط</h3>
+                        </div>
+                        <div class="surface-shadow flex flex-col items-center bg-[#F4F7F9] rounded-xl px-4 py-7 border-s-8 border-[#124375]">
+                            <iconify-icon icon="mdi:account-file" class="text-5xl text-[#124375]"></iconify-icon>
+                            <h3 class="text-base font-medium text-[#124375]">إنشاء مطالبة</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end tasks -->
+
+            <!-- start table -->
+            <section>
+                <div class="flex items-center gap-2 py-3">
+                    <iconify-icon icon="mingcute:time-fill" class="text-2xl" ></iconify-icon>
+                    <h3 class="text-base font-medium ">
+                        العمليات التي تمت اليوم
+                    </h3>
+                </div>
+                <div class="rounded-2xl overflow-hidden  surface-shadow">
+                    <table class="w-full">
+                        <tr class="bg-[#EEF7FF] border-b border-[#6D6D6D]">
+                            <th class="py-3 border-l border-[#6D6D6D]">العملية</th>
+                            <th class="py-3 border-l border-[#6D6D6D]">اسم العضو</th>
+                            <th class="py-3 border-l border-[#6D6D6D]">رقم العضوية</th>
+                            <th class="py-3 border-l border-[#6D6D6D]">تفاصيل العملية</th>
+                            <th class="py-3 border-l border-[#6D6D6D]">الحالة</th>
+                            <th class="py-3">التوقيت</th>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="py-3 border-l border-[#6D6D6D]">تم تسجيل إسلام مستند ناقص </td>
+                            <td class="py-3 border-l border-[#6D6D6D]">هاجر المعتز</td>
+                            <td class="py-3 border-l border-[#6D6D6D]">5123456789</td>
+                            <td class="py-3 border-l border-[#6D6D6D]">إستلام مستند ناقص</td>
+                            <td class="py-3 border-l border-[#6D6D6D]">تمت العملية</td>
+                            <td class="py-3">منذ ساعتين</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+          </main>
+      </div>
+      <!-- end table -->
+
+      <!-- start footer -->
+       <footer class="bg-[#EEF7FF] text-sm text-[#124375] font-normal text-center py-4 border border-[#124375]">
+        <div class="flex items-center justify-center gap-2">
+            <p>
+                جميع الحقوق محفوظة لجامعة العاصمة لعام 2026
+            </p>
+            <iconify-icon icon="tabler:copyright-filled" class="text-lg"></iconify-icon>
+        </div>
+       </footer>
+       <!-- end footer -->
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
