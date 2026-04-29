@@ -10,6 +10,10 @@ const requestModal1 = document.querySelector('.request-modal-1')
 const submitBtn = document.querySelector('.submit-btn')
 const requestModal2 = document.querySelector('.request-modal-2')
 const inputsFile = document.querySelectorAll('input[type="file"]')
+const params = new URLSearchParams(window.location.search);
+const type = params.get("type");
+
+
 
 submitBtn.addEventListener('click' , () => {
     requestModal1.classList.add('hidden')
@@ -50,10 +54,8 @@ items.forEach(item => {
     item.addEventListener("click", () => {
         const spans = dropDownBtn.querySelectorAll("span");
         if (spans.length > 0) {
-            spans[0].textContent = item.textContent;
+            spans[0].textContent = type;
             }
         dropDown.classList.add("hidden");
-        requestModal1.classList.remove('hidden')
-        overlay.classList.remove('hidden')
     });
 });

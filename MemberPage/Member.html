@@ -182,14 +182,9 @@
         <!-- end requests table -->
       </section>
       <!-- end requests section -->
- 
 
-      <!-- first step of request -->
-      <div class=" request-modal-1 hidden w-full max-w-5xl mx-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[70] rounded-2xl bg-[#F4F7F9] navy-shadow pt-2 pb-10">
-            <button class="close-btn text-[#124375] text-2xl  navy-shadow rounded mx-4 mt-2 flex items-center justify-center py-1 px-1">
-                <iconify-icon icon="weui:close-filled"></iconify-icon>
-            </button> 
-            <div class="modal-body space-y-7 px-5">
+
+        <div class="modal-body space-y-7 px-5"> 
                 <div class="modal-title text-center">
                     <h1 class="text-xl font-semibold text-[#124375]">
                         مطالبة ببلوغ سن التقاعد القانوني
@@ -204,19 +199,18 @@
                     </div>
                     <p>يرجى إرفاق المستندات التالية لإتمام طلب الإحالة إلى المعاش واستلام المستحقات.</p>
                 </div>
-                <div class="documents space-y-5">
+                <div class="documents grid grid-cols-2 gap-y-5 gap-x-4">
                     <!-- common inputs -->
                      <!-- خطاب بالمرتب الاساسي مش موجود في النقل --> 
                       <!-- بطاقة الرقم القومي مش موجودة في الوفاة  -->
                        <!-- قرار الاحالة للمعاش مش موجودة في النقل و الوفاة  -->
                         <!-- التوقيع في الوفاة هيبقي توقيع الوريث بدل العضو -->
-                    <div class="flex gap-4">  
                         <div class="relative border border-[#124375] rounded-2xl w-full">
-                            <span class="px-1 absolute right-3 top-[-15px] text-base text-[#124375] font-medium bg-[#F4F7F9]">خطاب بالمرتب الأساسي <span class="text-[#D92D20]">*</span></span>
-                            <label for="file-1" class=" cursor-pointer py-3  text-[#124375] flex items-center justify-center gap-1">
+                            <span class="px-1 absolute right-3 top-[-15px] text-base text-[#124375] font-medium bg-[#F4F7F9]">خطاب بالمرتب الأساسي<span class="text-[#D92D20]">*</span></span>
+                            <label for="file-2" class=" cursor-pointer py-3  text-[#124375] flex items-center justify-center gap-1">
                                 <p>اضغط لإرفاق صورة الملف</p>
                                 <iconify-icon icon="mingcute:upload-3-fill" class="text-2xl" ></iconify-icon>
-                                <input type="file" id="file-1" class="hidden" required>
+                                <input type="file" id="file-2" class="hidden" required>
                             </label>
                         </div>
                         <div class="relative border border-[#124375] rounded-2xl w-full">
@@ -227,8 +221,8 @@
                                 <input type="file" id="file-2" class="hidden" required>
                             </label>
                         </div>
-                    </div>
-                    <div class="flex gap-4">
+                    
+                   
                         <div class="relative border border-[#124375] rounded-2xl w-full">
                             <span class="px-1 absolute right-3 top-[-15px] text-base text-[#124375] font-medium bg-[#F4F7F9]">خطاب بتاريخ التعيين<span class="text-[#D92D20]">*</span></span>
                             <label for="file-3" class=" cursor-pointer py-3  text-[#124375] flex items-center justify-center gap-1">
@@ -245,8 +239,8 @@
                                 <input type="file" id="file-4" class="hidden" required>
                             </label>
                         </div>
-                    </div>
-                    <div class="flex gap-4">
+                    
+                       
                         <div class="relative border border-[#124375] rounded-2xl w-full">
                             <span class="px-1 absolute right-3 top-[-15px] text-base text-[#124375] font-medium bg-[#F4F7F9]">صورة قرار الإحالة للمعاش<span class="text-[#D92D20]">*</span></span>
                             <label for="file-5" class=" cursor-pointer py-3  text-[#124375] flex items-center justify-center gap-1">
@@ -255,6 +249,7 @@
                                 <input type="file" id="file-5" class="hidden" required>
                             </label>
                         </div>
+                     
                         <div class="relative border border-[#6D6D6D] rounded-2xl w-full">
                             <span class="px-1 absolute right-3 top-[-15px] text-base text-[#6D6D6D] font-medium bg-[#F4F7F9]">توقيع العضو بصرف مستحقاته</span>
                             <label for="file-6" class=" cursor-pointer py-3  text-[#6D6D6D] flex items-center justify-center gap-1">
@@ -263,10 +258,8 @@
                                 <input type="file" id="file-6" class="hidden">
                             </label>
                         </div>
-                    </div>
                     <!-- end common inputs -->
                      <!-- موجودين في النقل بس  -->
-                     <div class="flex gap-4">
                         <div class="relative border border-[#124375] rounded-2xl w-full">
                             <span class="px-1 absolute right-3 top-[-15px] text-base text-[#124375] font-medium bg-[#F4F7F9]">صورة إخلاء طرف<span class="text-[#D92D20]">*</span></span>
                             <label for="file-7" class=" cursor-pointer py-3  text-[#124375] flex items-center justify-center gap-1">
@@ -283,10 +276,8 @@
                                 <input type="file" id="file-8" class="hidden">
                             </label>
                         </div>
-                    </div>
                     <!-- كده النقل خلص -->
                      <!-- دول في الوفاة بس -->
-                      <div class="flex gap-4">
                         <div class="relative border border-[#124375] rounded-2xl w-full">
                             <span class="px-1 absolute right-3 top-[-15px] text-base text-[#124375] font-medium bg-[#F4F7F9]">صورة قرار إنهاء الخدمة <span class="text-[#D92D20]">*</span></span>
                             <label for="file-9" class=" cursor-pointer py-3  text-[#124375] flex items-center justify-center gap-1">
@@ -303,8 +294,6 @@
                                 <input type="file" id="file-10" class="hidden">
                             </label>
                         </div>
-                    </div>
-                     <div class="flex gap-4">
                         <div class="relative border border-[#124375] rounded-2xl w-full">
                             <span class="px-1 absolute right-3 top-[-15px] text-base text-[#124375] font-medium bg-[#F4F7F9]">صورة بطاقة الرقم القومي للورثة المستحقين<span class="text-[#D92D20]">*</span></span>
                             <label for="file-11" class=" cursor-pointer py-3  text-[#124375] flex items-center justify-center gap-1">
@@ -321,25 +310,26 @@
                                 <input type="file" id="file-12" class="hidden">
                             </label>
                         </div>
-                    </div>
-                    <div class="flex gap-4 justify-between">
-                        <div>
-                            <p class="text-base font-medium text-[#124375]">هل يوجد قصر ؟ <span class="text-[#D92D20]">*</span></p>
-                        </div> 
-                        <div class="flex gap-3">
-                            <label for="yes" class="cursor-pointer flex items-center gap-3">
-                                <input type="radio" name="answer" id="yes" class="hidden peer" required>
-                                <span class="inline-block w-4 h-4 rounded-full border-2 border-[#124375] peer-checked:bg-[#124375] peer-checked:shadow-[inset_0_0_0_2px_white]"></span>
-                                <span>نعم</span>
-                            </label> 
-                            <label for="no" class="cursor-pointer flex items-center gap-3">
-                                <input type="radio" name="answer" id="no" class="hidden peer" required>
-                                <span class="inline-block w-4 h-4 rounded-full border-2 border-[#124375] peer-checked:bg-[#124375] peer-checked:shadow-[inset_0_0_0_2px_white]"></span>
-                                <span>لا</span> 
-                            </label>
+                    <div class="col-span-2">
+                        <div class="flex justify-between">
+                            <div>
+                                <p class="text-base font-medium text-[#124375]">هل يوجد قصر ؟ <span class="text-[#D92D20]">*</span></p>
+                            </div> 
+                            <div class="flex gap-3">
+                                <label for="yes" class="cursor-pointer flex items-center gap-3">
+                                    <input type="radio" name="answer" id="yes" class="hidden peer" required>
+                                    <span class="inline-block w-4 h-4 rounded-full border-2 border-[#124375] peer-checked:bg-[#124375] peer-checked:shadow-[inset_0_0_0_2px_white]"></span>
+                                    <span>نعم</span>
+                                </label> 
+                                <label for="no" class="cursor-pointer flex items-center gap-3">
+                                    <input type="radio" name="answer" id="no" class="hidden peer" required>
+                                    <span class="inline-block w-4 h-4 rounded-full border-2 border-[#124375] peer-checked:bg-[#124375] peer-checked:shadow-[inset_0_0_0_2px_white]"></span>
+                                    <span>لا</span> 
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex gap-4">
+                    
                         <div class="relative border border-[#124375] rounded-2xl w-full">
                             <span class="px-1 absolute right-3 top-[-15px] text-base text-[#124375] font-medium bg-[#F4F7F9]">صورة قرار الوصاية  في حالة وجود قصر<span class="text-[#D92D20]">*</span></span>
                             <label for="file-13" class=" cursor-pointer py-3  text-[#124375] flex items-center justify-center gap-1">
@@ -356,7 +346,7 @@
                                 <input type="file" id="file-14" class="hidden">
                             </label>
                         </div>
-                    </div>
+                    
                     <!-- كده الوفاة خلصت -->
                 </div>
                 <div class="declaration space-y-3">
@@ -377,8 +367,7 @@
                     <button class="border border-[#124375] w-full rounded-[14px] py-3 navy-shadow text-base font-medium text-[#124375] close-btn">إلغاء</button>
                 </div>
             </div>
-       </div>
-       <!-- end first step -->
+
 
        <!-- second step of request -->
        <div class="request-modal-2 hidden w-full max-w-5xl mx-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[70] rounded-2xl bg-[#F4F7F9] navy-shadow pt-2 pb-10">
