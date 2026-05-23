@@ -171,7 +171,7 @@
                 </div> -->
                 <!-- end loans only -->
                 <div class="tab-content hidden flex gap-2" data-tab="الاشتراكات">
-                    <button class=" flex gap-3 py-3 px-12 rounded-[12px] justify-center items-center border border-[#F79009] text-[#F79009] text-[16px] font-medium bg-[#FFF7ED]">
+                    <button data-modal="modal8" class="open-modal flex gap-3 py-3 px-12 rounded-[12px] justify-center items-center border border-[#F79009] text-[#F79009] text-[16px] font-medium bg-[#FFF7ED]">
                         <iconify-icon icon="fluent:mail-warning-24-filled" class="flex items-center text-2xl"></iconify-icon>
                          إرسال إخطار مسجل بعلم الوصول
                     </button>
@@ -1042,8 +1042,51 @@
             </div>
     </div>
 
-
-
+    <div id="modal8" class="hidden w-full max-w-4xl mx-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[70] rounded-2xl bg-[#F4F7F9] navy-shadow pt-2 pb-10">
+            <button class="modal-close text-[#124375] text-2xl  navy-shadow rounded mx-4 mt-2 flex items-center justify-center py-1 px-1">
+                <iconify-icon icon="weui:close-filled"></iconify-icon>
+            </button> 
+            <div class="modal-body space-y-7 px-12">
+                <div class="modal-title text-center">
+                    <h1 class="text-xl font-semibold text-[#124375]">
+                        إرسال إخطار رسمي للسداد
+                    </h1>
+                </div>
+                <div class="space-y-7">
+                    <div class="flex gap-2">
+                        <iconify-icon icon="bxs:error" class="text-[#E6B800] text-xl mt-1"></iconify-icon>
+                       <p>تنبيه: العضو متأخر لمدة <span> 6 </span>شهور ويستوجب الإنذار القانوني.</p>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4 ">
+                        <div class="flex bg-[#EFEFEF] py-4 px-2 rounded-[10px]">
+                            <p class="text-[#124375] text-[16px] ">الاسم : <span class="text-[#021219] text-[16px] font-semibold">أحمد محمد إبراهيم</span></p>
+                        </div>
+                         <div class="flex bg-[#EFEFEF] py-4 px-2 rounded-[10px]">
+                            <p class="text-[#124375] text-[16px] ">رقم العضوية : <span class="text-[#021219] text-[16px] font-semibold">1234567898451</span></p>
+                        </div>
+                         <div class="flex bg-[#EFEFEF] py-4 px-2 rounded-[10px]">
+                            <p class="text-[#124375] text-[16px] ">شهور التأخير : <span class="text-[#021219] text-[16px] font-semibold">6شهور</span></p>
+                        </div>
+                         <div class="flex bg-[#EFEFEF] py-4 px-2 rounded-[10px]">
+                            <p class="text-[#124375] text-[16px] ">إجمالي المبلغ المستحق : <span class="text-[#021219] text-[16px] font-semibold">2100 ج.م </span></p>
+                        </div>
+                         <div class="flex bg-[#EFEFEF] py-4 px-2 rounded-[10px]">
+                            <p class="text-[#124375] text-[16px] ">أقدم شهر مستحق : <span class="text-[#021219] text-[16px] font-semibold">يناير 2026</span></p>
+                        </div>
+                         <div class="flex bg-[#EFEFEF] py-4 px-2 rounded-[10px]">
+                            <p class="text-[#124375] text-[16px] ">تاريخ إرسال الإخطار : <span class="text-[#021219] text-[16px] font-semibold">19 أبريل 2026</span></p>
+                        </div>
+                    </div>
+                    <div class="border border-[#124375] rounded-[10px] py-5 px-3">
+                        <p>يحيطكم الصندوق علماً بتأخركم في سداد الاشتراكات لمدة 6 أشهر، ويرجى السداد في موعد غايته "شهر" من تاريخه وإلا سيتم فصل العضوية نهائياً وفقاً للمادة (8). </p>
+                    </div>
+                </div>
+                <div class="btns flex gap-2 "> 
+                        <button class="submit-btn  rounded-[14px] w-full py-3 btn-disabled  text-base font-medium flex items-center justify-center gap-2 bg-[#124375] text-[#EEF7FF] navy-shadow hover:bg-[#0e3560] transition-colors"><span><iconify-icon icon="ic:round-email"  class="flex items-center text-2xl"></iconify-icon></span>طباعة وإرسال الإخطار</button>
+                        <button class="close-btn rounded-[14px] w-full py-3 btn-disabled  text-base font-medium flex items-center justify-center gap-2  text-[#124375] border border-[#124375] navy-shadow ">إلغاء</button>
+                </div>
+            </div>
+    </div>
 </body>
 <script src="../js/member.js"></script>
 </html> 
