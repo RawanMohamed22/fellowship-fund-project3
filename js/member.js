@@ -14,7 +14,6 @@ const dropDown = document.querySelectorAll(".dropDown");
 const inputsFile = document.querySelectorAll('input[type="file"]')
 // end file variables
 
-
 // tabs logic
 tabs.forEach(tab => {
     tab.addEventListener('click', (e) => {
@@ -46,6 +45,11 @@ openModalBtns.forEach((btn) => {
         if (targetModal) {
             targetModal.classList.remove("hidden");
             overlay.classList.remove("hidden");
+            // window.scrollTo({
+            //     top: 0,
+            //     behavior: 'smooth'
+            // })
+            // document.body.style.overflow = 'hidden'
         }
     });
 });
@@ -57,9 +61,12 @@ document.querySelectorAll(".close-btn, .modal-close").forEach((btn) => {
         if (parentModal) {
             parentModal.classList.add("hidden");
             overlay.classList.add("hidden");
+            // document.body.style.overflow = 'auto'
         }
     });
 });
+
+
 
 overlay.addEventListener("click", () => {
     document.querySelectorAll("[id^='modal']").forEach((modal) => {
